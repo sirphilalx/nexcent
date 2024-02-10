@@ -1,0 +1,243 @@
+:root {
+  --primary-clr: #28cb8b;
+  --secondary-clr: #263238;
+  --info: #2194f3;
+  --black: #263238;
+  --dark-grey: #4d4d4d;
+  ---grey: #717171;
+  --light-grey: #89939e;
+  --grey-blue: #abbed1;
+  --silver: #f5f7fa;
+  --white: #ffffff;
+  --f-clr: ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  padding-inline: 200px;
+}
+.wrapperInner {
+  padding-inline: 300px;
+}
+
+header {
+  background-color: var(--silver);
+  padding-block: 18px;
+}
+
+header > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > .wrapper > nav > ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+header > .wrapper > .userManager {
+  display: flex;
+  gap: 24px;
+}
+
+header > .wrapper > .userManager > .login {
+  color: #43a046;
+  border: none;
+  background-color: transparent;
+}
+header > .wrapper > .userManager > .signUp,
+.heroBtn,
+.learnMore {
+  color: var(--white);
+  border: none;
+  background-color: #43a046;
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+
+/* hero section styling */
+
+.hero {
+  background-color: var(--silver);
+}
+.hero > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 100px;
+}
+.accent {
+  color: #43a046;
+}
+
+.bigParagraph {
+  color: #717171;
+  font-size: 16px;
+  margin-block: 24px;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+/* Customers Section Styling */
+
+.customers {
+  padding-block: 40px;
+}
+.customers > .wrapper {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  text-align: center;
+}
+.customers > .wrapper > h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #4d4d4d;
+}
+.customers > .wrapper > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #717171;
+}
+
+.customers > .wrapper > .customersImages {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* community section styling */
+.community {
+  padding-block: 24px;
+}
+
+.community > .wrapper {
+  text-align: center;
+}
+
+.community > .wrapper > .sectionTitle > h2,
+.secondHeader {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #4d4d4d;
+  margin-bottom: 12px;
+}
+.community > .wrapper > .sectionTitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #717171;
+}
+
+.community > .wrapper > .sectionItems {
+  display: flex;
+  justify-content: space-around;
+  /* gap: 40px; */
+  margin-block: 24px;
+  align-items: center;
+}
+.community > .wrapper > .sectionItems > .sectionItem {
+  width: 244px;
+  padding: 24px 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.community > .wrapper > .sectionItems > .sectionItem > img {
+  width: 60px;
+}
+.community > .wrapper > .sectionItems > .sectionItem > h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #4d4d4d;
+}
+.smallParagraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #717171;
+}
+
+/* Spending time section styling */
+.spendTime {
+  margin-block: 24px;
+}
+
+.spendTime > .wrapperInner {
+  display: flex;
+}
+
+.spendTime > .wrapperInner > .spendTimeDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.spendTime > .wrapperInner > .spendTimeDetails > h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #4d4d4d;
+}
+
+/* Stats styling */
+.stats {
+  margin-block: 24px;
+  background-color: var(--silver);
+  padding-block: 50px;
+}
+
+.stats > .wrapperInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats > .wrapperInner > .statistics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.stats > .wrapperInner > .statistics > .statItem {
+  display: flex;
+  gap: 20px;
+}
+
+.stats > .wrapperInner > .statsText > h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+}
+.stats > .wrapperInner > .statsText > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #18191f;
+}
+.stats > .wrapperInner > .statistics > .statItem > .statItemTitle > h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+}
